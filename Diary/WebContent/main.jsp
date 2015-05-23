@@ -48,7 +48,10 @@
   <div class="col-md-3">
   <div style="display: block">
         <div class="panel panel-default">
-      <div class="panel-body">xxxx</div>
+      <div class="panel-body">
+          <img src="${pageContext.request.contextPath}/img/color.jpg" alt="头像" class="img-rounded img-responsive">
+          <h3 style="margin-top: 10px;text-align:center;"><span class="label label-success" >${user.userName}</span></h3>
+      </div>
    </div>
       <div class="panel panel-default">
       <div class="panel-body">xxxx</div>
@@ -58,6 +61,13 @@
      
   </div>
   <div class="col-md-9">
+    <div class="panel panel-default">
+      <div class="panel-heading">日记列表</div>
+      <!-- <div class="panel-body">
+      ddddd
+       </div> -->
+       <jsp:include page="diarylist.jsp"></jsp:include>
+   </div>
   </div>
 </div>
 </div>
